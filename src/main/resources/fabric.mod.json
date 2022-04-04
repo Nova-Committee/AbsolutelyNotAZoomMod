@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "anazm",
+  "version": "${version}",
+
+  "name": "Absolutely Not A Zoom Mod",
+  "description": "This is \u3042n ex\u3042mple description! Tell everyone wh\u3042t your mod is \u3042bout!",
+  "authors": [
+    "pkstDev"
+  ],
+
+  "license": "MIT",
+  "icon": "assets/anazm/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "committee.nova.anazm.ANAZM"
+    ]
+  },
+  "mixins": [
+    "anazm.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*"
+  }
+}
