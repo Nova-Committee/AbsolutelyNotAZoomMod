@@ -23,7 +23,11 @@
   ],
 
   "depends": {
-    "fabricloader": "*",
-    "fabric": "*"
+    "fabricloader": ">=0.13.3",
+    "minecraft": "=1.19-22.w.13.oneBlockAtATime",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
   }
 }
