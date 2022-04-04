@@ -10,8 +10,9 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 public abstract class GameRendererMixin {
     @ModifyVariable(method = "getFov", at = @At(value = "RETURN", shift = At.Shift.BEFORE), ordinal = 0)
     private double getFov(double fov) {
-        final boolean p = ANAZM.zoomKeyBinding.isPressed();
-        ANAZM.isZooming = p;
-        return fov / (p? 9 : 1);
+        double d;
+        ANAZM.isZooming = ANAZM.zoomKeyBinding.isPressed();
+        d = ANAZM.isZooming ? 9.0 : 1.0;
+        return fov / d;
     }
 }
